@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  @apply bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100;
+}
